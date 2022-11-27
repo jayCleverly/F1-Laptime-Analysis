@@ -1,0 +1,3 @@
+For races that were ran in wet conditions I have substituted data with top Q1 results for each driver.
+For races not taken part in due to covid, I have used the same data as the previous year.
+Both these methods have been applied to limit the number of potential anomalies within the dataset. 
