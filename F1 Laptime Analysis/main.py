@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 
 
+# creates a graph showing previous lap times and predicted lap times
 def Graph(x1, x2, x3, y, predicting):
     # graph showing past data
     fig = plt.figure()
@@ -43,6 +44,7 @@ def Graph(x1, x2, x3, y, predicting):
     return fig
 
 
+# calls graph function for each predicted data
 def Run():
     # loads in data
     monzaPredictedData = []
@@ -104,5 +106,6 @@ def Run():
             """)
 
 
+# runs graphics
 if __name__ == "__main__":
     Run()
