@@ -10,6 +10,7 @@ from sklearn import preprocessing
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
+# gets the average lap times
 def Average(file):
     averageTimes = [0,0,0,0,0,0,0,0,0]
 
@@ -36,6 +37,7 @@ def Average(file):
     return averageTimes
 
 
+# predicts next lap times
 def Predict(x, y, years):
     X = x
     Y = y
@@ -71,6 +73,7 @@ def Predict(x, y, years):
     return prediction
 
 
+# processes data and predicts outcomes
 def Run():
     # gets the average daya for each track
     monzaData = Average("data/base/MonzaLapTimes.csv")
@@ -105,5 +108,6 @@ def Run():
         file.writerow(interlagosData)
     
 
+# runs predictions
 if __name__ == "__main__":
     Run()
